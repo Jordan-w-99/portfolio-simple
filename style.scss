@@ -1,6 +1,6 @@
 $title-font: helvetica;
 $content-font: arial;
-$small-break: 600px;
+$small-break: 750px;
 
 html{
     background-color: lightblue;
@@ -34,18 +34,15 @@ html{
                     box-shadow: 1px 1px 3px 1px lightslategray;
                     border-radius: 5px;
                     box-sizing: border-box;
-                    height: 200px;
+                    height: 175px;
                     background-color: lightblue;
                     margin: 10px;
+                    transition: width 0.3s;
                 }
 
                 @media screen and (max-width: $small-break) {
                     .work-display{
                         width: calc(100% - 20px);
-    
-                        height: 100px;
-                        background-color: black;
-                        margin: 10px;
                     }
                 }
             }
