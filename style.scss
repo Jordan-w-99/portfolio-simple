@@ -2,7 +2,7 @@ $title-font: helvetica;
 $content-font: arial;
 $small-break: 750px;
 
-html{
+html {
     background-color: lightblue;
 
     body {
@@ -14,22 +14,26 @@ html{
         min-height: clamp(750px, calc(100vh - 100px), 1920px);
         padding: 3rem;
         box-sizing: border-box;
-        
-        .intro-section{
+
+        .intro-section {
             overflow: auto;
-            h1{
+
+            h1 {
                 font-size: xxx-large;
                 margin: 0 0 1.5rem 0;
             }
-        } 
-        
-        .work-section{
-            .work-display-container{
+        }
+
+        .work-section {
+            .work-display-container {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
 
-                .work-display{
+                .work-display {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     width: calc((100% - 40px) / 2);
                     box-shadow: 1px 1px 3px 1px lightslategray;
                     border-radius: 5px;
@@ -41,7 +45,7 @@ html{
                 }
 
                 @media screen and (max-width: $small-break) {
-                    .work-display{
+                    .work-display {
                         width: calc(100% - 20px);
                     }
                 }
@@ -50,10 +54,12 @@ html{
     }
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: $title-font;
 }
 
-p{
+a,
+p {
     font-family: $content-font;
 }
