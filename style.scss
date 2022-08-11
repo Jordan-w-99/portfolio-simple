@@ -73,10 +73,28 @@ html {
                         transition: backdrop-filter 0.5s ease 0.2s;
                     }
 
+                    .work-link-container {
+                        width: 80%;
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+
                     .work-link {
                         min-width: 50px;
                         min-height: 50px;
                         width: 35%;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        outline: none;
+                        border: none;
+                        border-radius: 5px;
+                        box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+                        font-family: $content-font;
+                        font-size: 12pt;
+                    }
+
+                    .work-link:active {
+                        box-shadow: none;
+                        transform: translate(2px, 2px);
                     }
 
                     .work-desc-toggle {
@@ -85,8 +103,12 @@ html {
                         align-items: center;
                         width: 50%;
                         height: 30px;
+                        background-color: rgba(255, 255, 255, 0.25);
+                        border-radius: 3px;
 
                         &:hover {
+                            background-color: rgba(200, 200, 200, 0.25);
+
                             +.blur-overlay {
                                 backdrop-filter: blur(5px);
                                 .work-desc {

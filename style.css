@@ -65,10 +65,26 @@ html body .work-section .work-display-container .work-display .blur-overlay {
   transition: backdrop-filter 0.5s ease 0.2s;
   transition: backdrop-filter 0.5s ease 0.2s, -webkit-backdrop-filter 0.5s ease 0.2s;
 }
+html body .work-section .work-display-container .work-display .work-link-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
 html body .work-section .work-display-container .work-display .work-link {
   min-width: 50px;
   min-height: 50px;
   width: 35%;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  font-family: arial;
+  font-size: 12pt;
+}
+html body .work-section .work-display-container .work-display .work-link:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }
 html body .work-section .work-display-container .work-display .work-desc-toggle {
   display: flex;
@@ -76,6 +92,11 @@ html body .work-section .work-display-container .work-display .work-desc-toggle 
   align-items: center;
   width: 50%;
   height: 30px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+}
+html body .work-section .work-display-container .work-display .work-desc-toggle:hover {
+  background-color: rgba(200, 200, 200, 0.25);
 }
 html body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay {
   -webkit-backdrop-filter: blur(5px);
