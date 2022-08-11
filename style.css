@@ -17,6 +17,10 @@ html body .intro-section h1 {
   font-size: xxx-large;
   margin: 0 0 1.5rem 0;
 }
+html body .intro-section p {
+  font-size: 14pt;
+  line-height: 24pt;
+}
 html body .work-section .work-display-container {
   display: flex;
   flex-wrap: wrap;
@@ -109,6 +113,27 @@ html body .work-section .work-display-container .work-display .work-desc-toggle:
   html body .work-section .work-display-container .work-display {
     width: calc(100% - 20px);
   }
+}
+html body .contact-section #contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+}
+html body .contact-section #contact-container .contact-button {
+  width: 120px;
+  height: 40px;
+  font-size: 12pt;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgba(220, 220, 220, 0.5);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  font-family: arial;
+}
+html body .contact-section #contact-container .contact-button:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }
 
 h1,
