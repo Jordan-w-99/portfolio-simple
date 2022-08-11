@@ -33,6 +33,7 @@ html {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    flex-direction: column;
                     width: calc((100% - 40px) / 2);
                     box-shadow: 1px 1px 3px 1px lightslategray;
                     border-radius: 5px;
@@ -41,6 +42,61 @@ html {
                     background-color: lightblue;
                     margin: 10px;
                     transition: width 0.3s;
+                    text-decoration: none;
+                    overflow: hidden;
+                    position: relative;
+
+                    .work-desc {
+                        display: block;
+                        position: absolute;
+                        height: auto;
+                        width: 90%;
+                        transform: translateY(175px);
+                        transition: all 0.5s ease-in-out;
+                        z-index: 10;
+                        pointer-events: none;
+
+                        p {
+                            width: 90%;
+                        }
+                    }
+
+                    .blur-overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        pointer-events: none;
+                        z-index: 5;
+                        transition: backdrop-filter 0.5s ease 0.2s;
+                    }
+
+                    .work-link {
+                        min-width: 50px;
+                        min-height: 50px;
+                        width: 35%;
+                    }
+
+                    .work-desc-toggle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        height: 30px;
+
+                        &:hover {
+                            +.blur-overlay {
+                                backdrop-filter: blur(5px);
+                                .work-desc {
+                                    transform: translateY(0);
+                                }
+                            }
+                        }
+                    }
+
+
                 }
 
                 @media screen and (max-width: $small-break) {
@@ -58,6 +114,7 @@ h2 {
     font-family: $title-font;
 }
 
+h3,
 a,
 p {
     font-family: $content-font;

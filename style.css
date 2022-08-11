@@ -1,61 +1,89 @@
 html {
   background-color: lightblue;
 }
-
 html body {
   background-color: white;
   text-align: center;
   margin: 50px auto;
   max-width: clamp(360px, 75vw, 900px);
-  -webkit-box-shadow: 2px 2px 5px 1px lightslategray;
-          box-shadow: 2px 2px 5px 1px lightslategray;
+  box-shadow: 2px 2px 5px 1px lightslategray;
   padding: 3rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html body .intro-section {
   overflow: auto;
 }
-
 html body .intro-section h1 {
   font-size: xxx-large;
   margin: 0 0 1.5rem 0;
 }
-
 html body .work-section .work-display-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 html body .work-section .work-display-container .work-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: calc((100% - 40px) / 2);
-  -webkit-box-shadow: 1px 1px 3px 1px lightslategray;
-          box-shadow: 1px 1px 3px 1px lightslategray;
+  box-shadow: 1px 1px 3px 1px lightslategray;
   border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 175px;
   background-color: lightblue;
   margin: 10px;
-  -webkit-transition: width 0.3s;
   transition: width 0.3s;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
 }
-
+html body .work-section .work-display-container .work-display .work-desc {
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 90%;
+  transform: translateY(175px);
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+  pointer-events: none;
+}
+html body .work-section .work-display-container .work-display .work-desc p {
+  width: 90%;
+}
+html body .work-section .work-display-container .work-display .blur-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 5;
+  transition: -webkit-backdrop-filter 0.5s ease 0.2s;
+  transition: backdrop-filter 0.5s ease 0.2s;
+  transition: backdrop-filter 0.5s ease 0.2s, -webkit-backdrop-filter 0.5s ease 0.2s;
+}
+html body .work-section .work-display-container .work-display .work-link {
+  min-width: 50px;
+  min-height: 50px;
+  width: 35%;
+}
+html body .work-section .work-display-container .work-display .work-desc-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30px;
+}
+html body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+html body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay .work-desc {
+  transform: translateY(0);
+}
 @media screen and (max-width: 750px) {
   html body .work-section .work-display-container .work-display {
     width: calc(100% - 20px);
@@ -67,8 +95,8 @@ h2 {
   font-family: helvetica;
 }
 
+h3,
 a,
 p {
   font-family: arial;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
