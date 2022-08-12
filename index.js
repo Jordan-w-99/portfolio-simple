@@ -62,7 +62,7 @@ function createProjectDiv(project) {
 
     projectDiv.appendChild(blurOverlay);
 
-    // conntect it all together
+    // Finally add the project div to the container
     projectContainer.appendChild(projectDiv);
 
     // EXAMPLE HTML
@@ -85,12 +85,7 @@ function createProjectDiv(project) {
 
 async function populateProjects() {
     const projects = await loadProjects();
-
-    console.log(projects);
     projects.forEach(project => createProjectDiv(project));
 }
 
 populateProjects();
-
-
-

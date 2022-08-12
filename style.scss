@@ -1,9 +1,9 @@
 $title-font: helvetica;
 $content-font: arial;
-$small-break: 750px;
+$small-break: 800px;
 
 html {
-    background-color: lightblue;
+    background-color: #69EBD0;
 
     body {
         background-color: white;
@@ -44,7 +44,7 @@ html {
                     border-radius: 5px;
                     box-sizing: border-box;
                     height: 175px;
-                    background-color: lightblue;
+                    background-color: #69EBD0;
                     margin: 10px;
                     transition: width 0.3s;
                     text-decoration: none;
@@ -132,8 +132,6 @@ html {
                             }
                         }
                     }
-
-
                 }
 
                 @media screen and (max-width: $small-break) {

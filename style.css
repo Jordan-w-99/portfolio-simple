@@ -1,5 +1,5 @@
 html {
-  background-color: lightblue;
+  background-color: #69EBD0;
 }
 html body {
   background-color: white;
@@ -36,7 +36,7 @@ html body .work-section .work-display-container .work-display {
   border-radius: 5px;
   box-sizing: border-box;
   height: 175px;
-  background-color: lightblue;
+  background-color: #69EBD0;
   margin: 10px;
   transition: width 0.3s;
   text-decoration: none;
@@ -116,7 +116,7 @@ html body .work-section .work-display-container .work-display .work-desc-toggle:
 html body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay .work-desc {
   transform: translateY(0);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   html body .work-section .work-display-container .work-display {
     width: calc(100% - 20px);
   }
