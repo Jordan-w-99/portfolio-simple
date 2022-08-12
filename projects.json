@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "name": "Snake 3D",
+            "view_link": "https://jordan-w-99.github.io/Snake_3D/",
+            "code_link": "https://github.com/Jordan-w-99/Snake_3D",
+            "description": "ThreeJS recreation of a Snake Game.<br>I used this as a project to learn the basics of ThreeJS.<br>I would like to implement proper 3D models and complete the gameplay features in future."
+        },
+        {
+            "name": "YouTube Playlist Length",
+            "view_link": "https://chrome.google.com/webstore/detail/yt-playlist-length/jaiodgneidkcpnnijbigkjoefgfbmhkk",
+            "code_link": "https://github.com/Jordan-w-99/yt_playlist_length",
+            "description": "Displays the total duration of the current YouTube playlist, released on the Chrome Extension store.<br>I used this to learn how to build a Chrome Extension and the release process.<br>I would like to continue maintaining and expanding this in future." 
+        },
+        {
+            "name": "Island Terrain Generator",
+            "view_link": "https://jordan-w-99.github.io/2D-Terrain-Generator/",
+            "code_link": "https://github.com/Jordan-w-99/2D-Terrain-Generator",
+            "description": "Small app that uses 2D noise algorithms to generate random island terrains.<br>This was a good exercise in code optimization.<br>I'd like to use this to generate 3D terrains in future."
+        },
+        {
+            "name": "2D Raycasting Demo",
+            "view_link": "https://jordan-w-99.github.io/Simple_2D_Raycasting_P5/",
+            "code_link": "https://github.com/Jordan-w-99/Simple_2D_Raycasting_P5",
+            "description": "A 2D app built with P5.js where a light source follows the mouse and the user can draw 'walls'to block the light.<br>I built this to learn how raycasting works in computer graphics.<br>In future I'd like to utilize this logic in a game of some form."
+        },
+        {
+            "name": "Task Management React App",
+            "view_link": "https://jordan-w-99.github.io/task-management-react-app/",
+            "code_link": "https://github.com/Jordan-w-99/task-management-react-app",
+            "description": "A task management app inspired by apps like 'Trello'.<br>I used this to learn the basics of ReactJS.<br>In future I would like to improve the appearance of the app and make a conversion using Reactstate Hooks."
+        },
+        {
+            "name": "Cat API Snap!",
+            "view_link": "https://jordan-w-99.github.io/Cat-API-Snap/",
+            "code_link": "https://github.com/Jordan-w-99/Cat-API-Snap",
+            "description": "A small snap game, where the images are randomly fetched cats from a Cat API.<br>This was an exercise in using an external API.<br>More details are below the game itself."
+        }
+    ]
+}
