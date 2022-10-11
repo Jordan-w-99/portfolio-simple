@@ -1,7 +1,7 @@
-html {
+body {
   background-color: #69EBD0;
 }
-html body {
+body #page-body {
   background-color: white;
   text-align: center;
   margin: 50px auto;
@@ -10,23 +10,23 @@ html body {
   padding: 3rem;
   box-sizing: border-box;
 }
-html body .intro-section {
+body #page-body .intro-section {
   overflow: auto;
 }
-html body .intro-section h1 {
+body #page-body .intro-section h1 {
   font-size: xxx-large;
   margin: 0 0 1.5rem 0;
 }
-html body .intro-section p {
+body #page-body .intro-section p {
   font-size: 14pt;
   line-height: 24pt;
 }
-html body .work-section .work-display-container {
+body #page-body .work-section .work-display-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-html body .work-section .work-display-container .work-display {
+body #page-body .work-section .work-display-container .work-display {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@ html body .work-section .work-display-container .work-display {
   overflow: hidden;
   position: relative;
 }
-html body .work-section .work-display-container .work-display .work-desc {
+body #page-body .work-section .work-display-container .work-display .work-desc {
   display: block;
   position: absolute;
   height: auto;
@@ -53,10 +53,10 @@ html body .work-section .work-display-container .work-display .work-desc {
   z-index: 10;
   pointer-events: none;
 }
-html body .work-section .work-display-container .work-display .work-desc p {
+body #page-body .work-section .work-display-container .work-display .work-desc p {
   width: 90%;
 }
-html body .work-section .work-display-container .work-display .blur-overlay {
+body #page-body .work-section .work-display-container .work-display .blur-overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,12 +69,12 @@ html body .work-section .work-display-container .work-display .blur-overlay {
   transition: backdrop-filter 0.5s ease 0.2s;
   transition: backdrop-filter 0.5s ease 0.2s, -webkit-backdrop-filter 0.5s ease 0.2s;
 }
-html body .work-section .work-display-container .work-display .work-link-container {
+body #page-body .work-section .work-display-container .work-display .work-link-container {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
 }
-html body .work-section .work-display-container .work-display .work-link {
+body #page-body .work-section .work-display-container .work-display .work-link {
   min-width: 50px;
   min-height: 50px;
   width: 35%;
@@ -86,14 +86,14 @@ html body .work-section .work-display-container .work-display .work-link {
   font-family: arial;
   font-size: 12pt;
 }
-html body .work-section .work-display-container .work-display .work-link:active {
+body #page-body .work-section .work-display-container .work-display .work-link:active {
   box-shadow: none;
   transform: translate(2px, 2px);
 }
-html body .work-section .work-display-container .work-display .work-link:hover {
+body #page-body .work-section .work-display-container .work-display .work-link:hover {
   background-color: rgba(240, 240, 240, 0.5);
 }
-html body .work-section .work-display-container .work-display .work-desc-toggle {
+body #page-body .work-section .work-display-container .work-display .work-desc-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,32 +102,32 @@ html body .work-section .work-display-container .work-display .work-desc-toggle 
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px;
 }
-html body .work-section .work-display-container .work-display .work-desc-toggle:hover {
+body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover {
   background-color: rgba(200, 200, 200, 0.25);
   box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.5);
 }
-html body .work-section .work-display-container .work-display .work-desc-toggle:hover span {
+body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover span {
   transform: translate(1px, 1px);
 }
-html body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay {
+body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
-html body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay .work-desc {
+body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay .work-desc {
   transform: translateY(0);
 }
 @media screen and (max-width: 800px) {
-  html body .work-section .work-display-container .work-display {
+  body #page-body .work-section .work-display-container .work-display {
     width: calc(100% - 20px);
   }
 }
-html body .contact-section #contact-container {
+body #page-body .contact-section #contact-container {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
   margin: auto;
 }
-html body .contact-section #contact-container .contact-button {
+body #page-body .contact-section #contact-container .contact-button {
   width: 120px;
   height: 40px;
   font-size: 12pt;
@@ -138,11 +138,11 @@ html body .contact-section #contact-container .contact-button {
   box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
   font-family: arial;
 }
-html body .contact-section #contact-container .contact-button:active {
+body #page-body .contact-section #contact-container .contact-button:active {
   box-shadow: none;
   transform: translate(2px, 2px);
 }
-html body .contact-section #contact-container .contact-button:hover {
+body #page-body .contact-section #contact-container .contact-button:hover {
   background-color: rgba(205, 205, 205, 0.5);
 }
 

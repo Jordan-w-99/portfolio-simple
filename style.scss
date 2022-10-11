@@ -2,10 +2,10 @@ $title-font: helvetica;
 $content-font: arial;
 $small-break: 800px;
 
-html {
+body {
     background-color: #69EBD0;
 
-    body {
+    #page-body {
         background-color: white;
         text-align: center;
         margin: 50px auto;
