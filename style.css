@@ -50,7 +50,7 @@ body #page-body .work-section .work-display-container .work-display .work-desc {
   height: auto;
   width: 90%;
   transform: translateY(175px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
   z-index: 10;
   pointer-events: none;
 }
@@ -67,8 +67,8 @@ body #page-body .work-section .work-display-container .work-display .blur-overla
   pointer-events: none;
   z-index: 5;
   transition: -webkit-backdrop-filter 0.5s ease 0.2s;
-  transition: backdrop-filter 0.5s ease 0.2s;
-  transition: backdrop-filter 0.5s ease 0.2s, -webkit-backdrop-filter 0.5s ease 0.2s;
+  transition: backdrop-filter 0.25s ease 0.2s;
+  transition: backdrop-filter 0.25s ease 0.2s, -webkit-backdrop-filter 0.25s ease 0.2s;
 }
 body #page-body .work-section .work-display-container .work-display .work-link-container {
   width: 80%;
