@@ -37,6 +37,12 @@
             "description": "A task management app inspired by apps like 'Trello'.<br>I used this to learn the basics of ReactJS.<br>In future I would like to improve the appearance of the app and make a conversion using Reactstate Hooks."
         },
         {
+            "name": "Draw Race 2D",
+            "view_link": "https://jordan-w-99.github.io/Draw_Race/",
+            "code_link": "https://github.com/Jordan-w-99/Draw_Race",
+            "description": "*Warning* this is a very old project I started to work on again, so is currently rough! Place points to create a racetrack, then see it generated and ready to drive on."
+        },
+        {
             "name": "Cat API Snap!",
             "view_link": "https://jordan-w-99.github.io/Cat-API-Snap/",
             "code_link": "https://github.com/Jordan-w-99/Cat-API-Snap",
