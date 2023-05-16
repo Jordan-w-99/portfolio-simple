@@ -47,6 +47,12 @@
             "view_link": "https://jordan-w-99.github.io/Cat-API-Snap/",
             "code_link": "https://github.com/Jordan-w-99/Cat-API-Snap",
             "description": "A small snap game, where the images are randomly fetched cats from a Cat API.<br>This was an exercise in using an external API.<br>More details are below the game itself."
+        },
+        {
+            "name": "This Portfolio Site",
+            "view_link": "https://jordan-wright.co.uk/",
+            "code_link": "https://github.com/Jordan-w-99/portfolio-simple",
+            "description": "Built to be simple, this portfolio site generates these work items from data stored in a JSON file, and uses only pure HTML, CSS, and JS.<br>I'm a programmer at heart, not a designer, so I decided to scrap any attempt at a better looking portfolio site in favour of simple functionality!"
         }
     ],
     "uni_projects": [
