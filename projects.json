@@ -1,5 +1,5 @@
 {
-    "projects": [
+    "personal_projects": [
         {
             "name": "2048 Clone",
             "view_link": "https://jordan-w-99.github.io/2048_clone/",
@@ -16,7 +16,7 @@
             "name": "YouTube Playlist Length",
             "view_link": "https://chrome.google.com/webstore/detail/yt-playlist-length/jaiodgneidkcpnnijbigkjoefgfbmhkk",
             "code_link": "https://github.com/Jordan-w-99/yt_playlist_length",
-            "description": "Displays the total duration of the current YouTube playlist, released on the Chrome Extension store with 300 users as of 16/05/23.<br>I used this to learn how to build a Chrome Extension and the release process." 
+            "description": "Displays the total duration of the current YouTube playlist, released on the Chrome Extension store with 300 users as of 16/05/23.<br>I used this to learn how to build a Chrome Extension and the release process, but continue to maintain it." 
         },
         {
             "name": "Island Terrain Generator",
@@ -47,6 +47,50 @@
             "view_link": "https://jordan-w-99.github.io/Cat-API-Snap/",
             "code_link": "https://github.com/Jordan-w-99/Cat-API-Snap",
             "description": "A small snap game, where the images are randomly fetched cats from a Cat API.<br>This was an exercise in using an external API.<br>More details are below the game itself."
+        }
+    ],
+    "uni_projects": [
+        {
+            "name": "FYP: Real Streets Track Generator",
+            "view_link": "",
+            "grade": "74",
+            "description": "My Final Year Project - An application to generate a 3D racetrack scene based upon a real-life route selected by the user.<br>This was built with ThreeJS with Mapbox as the data provider."
+        },
+        {
+            "name": "Attendance Register Web App",
+            "view_link": "",
+            "grade": "74",
+            "description": "A Group Project part of the 'Software Architecture & Design' final year module where I acted as a team lead.<br> It is a full MERN stack application which implements a secure user account system, roles, attendance registering, and stat tracking."
+        },
+        {
+            "name": "Asteroids Enhanced",
+            "view_link": "",
+            "grade": "81",
+            "description": "A Second Year project for the 'Object-oriented Programming' module.<br>This is a game based on the classic 'Asteroids', written in C++ with a university-created OpenGL graphics library, it aims to implement pure OOP."
+        },
+        {
+            "name": "SciToolset Mission Viewer",
+            "view_link": "",
+            "grade": "77",
+            "description": "A Second Year project for the 'Group Software Dev Project' module which I led the development of.<br>Built with plain HTML, CSS & JS, this is a dataset visualizer for a real client 'SciToolset', it displays data supplied by their API (currently mocked) and lets the user view stats, filter, and tag the data."
+        },
+        {
+            "name": "JWPL - Custom Programming Language",
+            "view_link": "",
+            "grade": "69.5",
+            "description": "A Second Year project for the 'Fundamentals of Programming Languages' module, where I designed a programming language from scratch.<br>Part 1 of the project was to design the grammar for the language which I based on markdown, using Antlr to parse it.<br>Part 2 involved using Java to create an interpreter and Javascript compiler to run the code."
+        },
+        {
+            "name": "Meeting Scheduler",
+            "view_link": "",
+            "grade": "78.9",
+            "description": "A Second Year project for the 'Software Engineering: Concepts & methods' module.<br>Leading the development side of the group, I created a meeting scheduler application with C# and Winforms which allows users to create & edit meetings, accept invited from others, and request special equipment."
+        },
+        {
+            "name": "Follow Me Game",
+            "view_link": "",
+            "grade": "89",
+            "description": "A First Year project for the 'C++ Programming' module.<br>A game created in C++ with a university-written OpenGL Graphics Library, where the player must copy the randomly generated moves of the computer with increasing difficulty, with full 2D graphics, scoreboard and sound effects."
         }
     ]
 }

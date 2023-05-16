@@ -76,6 +76,9 @@ body #page-body .work-section .work-display-container .work-display .work-link-c
   justify-content: space-evenly;
 }
 body #page-body .work-section .work-display-container .work-display .work-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 50px;
   min-height: 50px;
   width: 35%;
