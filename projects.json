@@ -4,7 +4,8 @@
             "name": "2048 Clone",
             "view_link": "https://jordan-w-99.github.io/2048_clone/",
             "code_link": "https://github.com/Jordan-w-99/2048_clone",
-            "description": "This was just a quick challenge whilst travelling to Paris on the train. I completed this on the return journey and managed it without any internet connection!"
+            "description": "This was just a quick challenge whilst travelling to Paris on the train. I completed this on the return journey and managed it without any internet connection!",
+            "image": "2048.png"
         },
         {
             "name": "Snake 3D",
@@ -16,7 +17,7 @@
             "name": "YouTube Playlist Length",
             "view_link": "https://chrome.google.com/webstore/detail/yt-playlist-length/jaiodgneidkcpnnijbigkjoefgfbmhkk",
             "code_link": "https://github.com/Jordan-w-99/yt_playlist_length",
-            "description": "Displays the total duration of the current YouTube playlist, released on the Chrome Extension store with 300 users as of 16/05/23.<br>I used this to learn how to build a Chrome Extension and the release process, but continue to maintain it." 
+            "description": "Displays the total duration of the current YouTube playlist, released on the Chrome Extension store with 300 users as of 16/05/23.<br>I used this to learn how to build a Chrome Extension and the release process, but continue to maintain it."
         },
         {
             "name": "Island Terrain Generator",

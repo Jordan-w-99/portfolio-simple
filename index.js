@@ -1,9 +1,9 @@
 async function loadProjects() {
-    const projects = await(await fetch('./projects.json')).json();
+    const projects = await (await fetch('./projects.json')).json();
     return projects;
 }
 
-function createPersonalProjectDiv(project) {
+function createPersonalProjectDiv(project, id) {
     const name = project.name;
     const viewLink = project.view_link;
     const codeLink = project.code_link;
@@ -42,6 +42,21 @@ function createPersonalProjectDiv(project) {
     // DESCRIPTION TOGGLE
     const projectDescToggle = document.createElement('p');
     projectDescToggle.className = 'work-desc-toggle';
+    projectDescToggle.addEventListener('mouseenter', () => {
+        const blurOverlay = document.querySelector(`#blur-overlay-${id}`);
+        const projectDesc = document.querySelector(`#work-desc-${id}`);
+
+        blurOverlay.classList.add('blur-overlay-active');
+        projectDesc.classList.add('work-desc-active');
+    })
+
+    projectDescToggle.addEventListener('mouseleave', () => {
+        const blurOverlay = document.querySelector(`#blur-overlay-${id}`);
+        const projectDesc = document.querySelector(`#work-desc-${id}`);
+
+        blurOverlay.classList.remove('blur-overlay-active');
+        projectDesc.classList.remove('work-desc-active');
+    })
 
     const projectDescToggleSpan = document.createElement('span');
     projectDescToggleSpan.innerText = 'Details';
@@ -53,14 +68,16 @@ function createPersonalProjectDiv(project) {
     // DESCRIPTION OVERLAY
     const blurOverlay = document.createElement('div');
     blurOverlay.className = 'blur-overlay';
+    blurOverlay.id = `blur-overlay-${id}`
+    projectDiv.appendChild(blurOverlay);
 
     const projectDesc = document.createElement('p');
     projectDesc.className = 'work-desc';
     projectDesc.innerHTML = description;
+    projectDesc.id = `work-desc-${id}`
+    projectDiv.appendChild(projectDesc);
 
-    blurOverlay.appendChild(projectDesc);
 
-    projectDiv.appendChild(blurOverlay);
 
     // Finally add the project div to the container
     projectContainer.appendChild(projectDiv);
@@ -83,7 +100,7 @@ function createPersonalProjectDiv(project) {
     // </div>
 }
 
-function createUniProjectDiv(project) {
+function createUniProjectDiv(project, id) {
     const name = project.name;
     const viewLink = project.view_link;
     const grade = project.grade;
@@ -93,6 +110,7 @@ function createUniProjectDiv(project) {
 
     const projectDiv = document.createElement('div');
     projectDiv.className = 'work-display';
+    projectDiv.style.backgroundImage = `url('assets/${project.image}')`
 
     // TITLE
     const projectTitle = document.createElement('h3');
@@ -109,7 +127,7 @@ function createUniProjectDiv(project) {
     projectViewButton.className = 'work-link';
     projectViewButton.addEventListener('click', e => window.open(viewLink, '_blank'));
 
-    if(viewLink === "") {
+    if (viewLink === "") {
         projectViewButton.disabled = true;
     }
 
@@ -125,6 +143,22 @@ function createUniProjectDiv(project) {
     // DESCRIPTION TOGGLE
     const projectDescToggle = document.createElement('p');
     projectDescToggle.className = 'work-desc-toggle';
+    projectDescToggle.addEventListener('mouseenter', () => {
+        const blurOverlay = document.querySelector(`#blur-overlay-${id}`);
+        const projectDesc = document.querySelector(`#work-desc-${id}`);
+
+        blurOverlay.classList.add('blur-overlay-active');
+        projectDesc.classList.add('work-desc-active');
+    })
+
+    projectDescToggle.addEventListener('mouseleave', () => {
+        const blurOverlay = document.querySelector(`#blur-overlay-${id}`);
+        const projectDesc = document.querySelector(`#work-desc-${id}`);
+
+        blurOverlay.classList.remove('blur-overlay-active');
+        projectDesc.classList.remove('work-desc-active');
+    })
+
 
     const projectDescToggleSpan = document.createElement('span');
     projectDescToggleSpan.innerText = 'Details';
@@ -136,14 +170,14 @@ function createUniProjectDiv(project) {
     // DESCRIPTION OVERLAY
     const blurOverlay = document.createElement('div');
     blurOverlay.className = 'blur-overlay';
+    blurOverlay.id = `blur-overlay-${id}`
+    projectDiv.appendChild(blurOverlay);
 
     const projectDesc = document.createElement('p');
     projectDesc.className = 'work-desc';
     projectDesc.innerHTML = description;
-
-    blurOverlay.appendChild(projectDesc);
-
-    projectDiv.appendChild(blurOverlay);
+    projectDesc.id = `work-desc-${id}`
+    projectDiv.appendChild(projectDesc);
 
     // Finally add the project div to the container
     projectContainer.appendChild(projectDiv);
@@ -166,8 +200,8 @@ function createUniProjectDiv(project) {
 
 async function populateProjects() {
     const projects = await loadProjects();
-    projects.personal_projects.forEach(project => createPersonalProjectDiv(project));
-    projects.uni_projects.forEach(project => createUniProjectDiv(project));
+    projects.personal_projects.forEach((project, index) => createPersonalProjectDiv(project, `personal-${index}`));
+    projects.uni_projects.forEach((project, index) => createUniProjectDiv(project, `uni-${index}`));
 }
 
 populateProjects();

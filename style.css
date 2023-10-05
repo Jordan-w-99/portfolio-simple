@@ -43,6 +43,7 @@ body #page-body .work-section .work-display-container .work-display {
   text-decoration: none;
   overflow: hidden;
   position: relative;
+  background-size: cover;
 }
 body #page-body .work-section .work-display-container .work-display .work-desc {
   display: block;
@@ -50,7 +51,7 @@ body #page-body .work-section .work-display-container .work-display .work-desc {
   height: auto;
   width: 90%;
   transform: translateY(175px);
-  transition: all 0.25s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 10;
   pointer-events: none;
 }
@@ -66,9 +67,10 @@ body #page-body .work-section .work-display-container .work-display .blur-overla
   width: 100%;
   pointer-events: none;
   z-index: 5;
-  transition: -webkit-backdrop-filter 0.5s ease 0.2s;
-  transition: backdrop-filter 0.25s ease 0.2s;
-  transition: backdrop-filter 0.25s ease 0.2s, -webkit-backdrop-filter 0.25s ease 0.2s;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: opacity 0.5s ease 0.2s;
 }
 body #page-body .work-section .work-display-container .work-display .work-link-container {
   width: 80%;
@@ -76,9 +78,6 @@ body #page-body .work-section .work-display-container .work-display .work-link-c
   justify-content: space-evenly;
 }
 body #page-body .work-section .work-display-container .work-display .work-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 50px;
   min-height: 50px;
   width: 35%;
@@ -112,13 +111,6 @@ body #page-body .work-section .work-display-container .work-display .work-desc-t
 }
 body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover span {
   transform: translate(1px, 1px);
-}
-body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-body #page-body .work-section .work-display-container .work-display .work-desc-toggle:hover + .blur-overlay .work-desc {
-  transform: translateY(0);
 }
 @media screen and (max-width: 800px) {
   body #page-body .work-section .work-display-container .work-display {
@@ -159,4 +151,12 @@ h3,
 a,
 p {
   font-family: arial;
+}
+
+.blur-overlay-active {
+  opacity: 1 !important;
+}
+
+.work-desc-active {
+  transform: translateY(0) !important;
 }/*# sourceMappingURL=style.css.map */
